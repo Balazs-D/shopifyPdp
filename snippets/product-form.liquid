@@ -1,0 +1,58 @@
+{% doc %}
+  Renders the product purchase form with availability messaging and the add-to-cart CTA.
+
+  @param {product} product - The product to render the form for.
+  @example
+  {% render 'product-form', product: product %}
+{% enddoc %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign is_in_cart = false %}
+
+{% for item in cart.items %}
+  {% if item.variant_id == current_variant.id %}
+    {% assign is_in_cart = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign is_available = false %}
+{% if current_variant.available %}
+  {% if is_in_cart == false %}
+    {% assign is_available = true %}
+  {% endif %}
+{% endif %}
+
+<div class="product__form">
+  {% render 'product-availability',
+    product: product,
+    variant: current_variant,
+    is_available: is_available
+  %}
+
+  {% form 'product', product %}
+    <input
+      type="hidden"
+      name="id"
+      value="{{ current_variant.id }}"
+    >
+
+    {% if is_available %}
+      {% assign button_label = 'product.add_to_cart' | t %}
+    {% else %}
+      {% assign button_label = 'product.sold_out' | t %}
+    {% endif %}
+
+    {% assign button_disabled = false %}
+    {% if is_available == false %}
+      {% assign button_disabled = true %}
+    {% endif %}
+
+    {% render 'button',
+      label: button_label,
+      type: 'submit',
+      disabled: button_disabled,
+      css_class: 'product__add-to-cart'
+    %}
+  {% endform %}
+</div>

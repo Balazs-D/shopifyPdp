@@ -1,0 +1,10 @@
+{% doc %}
+  Renders rich text content.
+
+  @param {string} content - The already-rendered rich text content.
+  @param {string} [css_class] - Additional CSS classes.
+{% enddoc %}
+
+<div class="{{ css_class }}">
+  {{ content }}
+</div>

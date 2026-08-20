@@ -1,0 +1,10 @@
+{% doc %}
+  Renders a semantic heading.
+
+  @param {string} text - The heading text.
+  @param {number} [level] - The heading level. Defaults to 2.
+  @param {string} [css_class] - Additional CSS classes.
+{% enddoc %}
+
+{% assign heading_level = level | default: 2 %}
+<h{{ heading_level }} class="{{ css_class }}">{{ text }}</h{{ heading_level }}>

@@ -1,0 +1,24 @@
+{% doc %}
+  Renders the product title, description and price information.
+
+  @param {product} product - The product to render.
+{% enddoc %}
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<div class="product__info">
+  {% render 'heading',
+    text: product.title,
+    level: 1,
+    css_class: 'product__title'
+  %}
+
+  {% if product.description != blank %}
+    {% render 'rich-text',
+      content: product.description,
+      css_class: 'product__description'
+    %}
+  {% endif %}
+
+  {% render 'product-price', variant: current_variant %}
+</div>

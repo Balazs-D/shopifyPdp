@@ -1,0 +1,30 @@
+{% doc %}
+  Renders product availability and delivery information.
+
+  @param {product} product - The product to check.
+  @param {variant} variant - The selected product variant.
+  @param {boolean} is_available - Whether the variant can be added to cart.
+{% enddoc %}
+
+<div class="product__availability-group">
+  <div class="product__availability {% if is_available %}product__availability--in-stock{% else %}product__availability--out-of-stock{% endif %}">
+    <span class="product__availability-dot" aria-hidden="true"></span>
+    <span>
+      {% if is_available %}
+        {{ 'product.in_stock' | t }}
+      {% else %}
+        {{ 'product.not_available' | t }}
+      {% endif %}
+    </span>
+
+    {% if is_available %}
+      <p class="product__delivery-time">
+        {% if product.metafields.custom.delivery_time != blank %}
+          {{ product.metafields.custom.delivery_time }}
+        {% else %}
+          {{ 'product.delivery_default' | t }}
+        {% endif %}
+      </p>
+    {% endif %}
+  </div>
+</div>
