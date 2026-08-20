@@ -1,0 +1,100 @@
+{% doc %}
+Renders the six product benefits shown below the product content.
+
+@example
+{% render 'product-benefits' %}
+{% enddoc %}
+
+<div class="product-benefits full-width">
+  <div class="product-benefits__content">
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.shield.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.quality' | t }}
+      </span>
+    </div>
+
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.truck.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.shipping' | t }}
+      </span>
+    </div>
+
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.returns.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.returns' | t }}
+      </span>
+    </div>
+
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.credit-card.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.payment' | t }}
+      </span>
+    </div>
+
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.support.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.support' | t }}
+      </span>
+    </div>
+
+    <div class="product-benefits__item">
+      <span class="product-benefits__icon" aria-hidden="true">
+        <img
+                src="{{ 'icon.availability.svg' | asset_url }}"
+                alt=""
+                width="32"
+                height="32"
+        >
+      </span>
+
+      <span class="product-benefits__text">
+        {{ 'product.benefits.availability' | t }}
+      </span>
+    </div>
+  </div>
+</div>
