@@ -1,6 +1,6 @@
 <h1 align="center" style="position: relative;">
   <br>
-    <img src="./assets/shoppy-x-ray.svg" alt="logo" width="200">
+    <img src="./assets/icon.shoppy-x-ray.svg" alt="logo" width="200">
   <br>
   Shopify Skeleton Theme
 </h1>

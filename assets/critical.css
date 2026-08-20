@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+/* Fallbacks for the critical layout before Shopify settings are applied. */
+:root {
+  --page-width: 1200px;
+  --page-margin: 20px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -73,7 +79,7 @@ p:empty {
 
 /** Theme styles below */
 body {
-  font-family: var(--font-primary--family);
+  font-family: var(--font-primary--family), 'Roboto', sans-serif;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
@@ -93,10 +99,10 @@ body {
  */
 .shopify-section {
   --content-width: min(
-    calc(var(--page-width) - var(--page-margin) * 2),
-    calc(100% - var(--page-margin) * 2)
+    calc(var(--page-width, 1200px) - var(--page-margin, 20px) * 2),
+    calc(100% - var(--page-margin, 20px) * 2)
   );
-  --content-margin: minmax(var(--page-margin), 1fr);
+  --content-margin: minmax(var(--page-margin, 20px), 1fr);
   --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
 
   /* This is required to make <img> elements work as background images */
