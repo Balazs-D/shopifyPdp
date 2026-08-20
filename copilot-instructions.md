@@ -1,0 +1,1 @@
+/Users/balazsdanyadi/dev/shopyfyTestProject/AGENTS.md
