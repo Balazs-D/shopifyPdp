@@ -1,18 +1,50 @@
 {% style %}
-  {% # Loads all font variantions with display: swap %}
-  {{ settings.type_primary_font | font_face: font_display: 'swap' }}
-  {{ settings.type_primary_font | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' }}
-  {{ settings.type_primary_font | font_modify: 'weight', 'bold' | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
-  {{ settings.type_primary_font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
+    {% # Loads all font variantions with display: swap %}
+    {{ settings.type_primary_font | font_face: font_display: 'swap' }}
+    {{ settings.type_primary_font | font_modify: 'weight', 'bold' | font_face: font_display: 'swap' }}
+    {{ settings.type_primary_font | font_modify: 'weight', 'bold' | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
+    {{ settings.type_primary_font | font_modify: 'style', 'italic' | font_face: font_display: 'swap' }}
 
-  :root {
+    :root {
+    /* Typography */
     --font-primary--family: {{ settings.type_primary_font.family }}, {{ settings.type_primary_font.fallback_families }};
     --font-primary--style: {{ settings.type_primary_font.style }};
     --font-primary--weight: {{ settings.type_primary_font.weight }};
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 34px;
+
+    /* Layout */
     --page-width: {{ settings.max_page_width }};
     --page-margin: {{ settings.min_page_margin }}px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 48px;
+
+    /* Colors */
     --color-background: {{ settings.background_color }};
     --color-foreground: {{ settings.foreground_color }};
+
+    --color-primary: #527c50;
+    --color-primary-hover: #456a44;
+    --color-text: #3d3d39;
+    --color-text-muted: #8a8984;
+    --color-border: #d8d8d3;
+    --color-surface: #ffffff;
+
+    /* Radius */
     --style-border-radius-inputs: {{ settings.input_corner_radius }}px;
-  }
+    --radius-sm: 3px;
+    --radius-md: 5px;
+    }
 {% endstyle %}

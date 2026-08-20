@@ -1,0 +1,17 @@
+{% doc %}
+  Renders the current product variant price.
+
+  @param {variant} variant - The product variant whose price is rendered.
+{% enddoc %}
+
+<div class="product__price">
+  {% if variant.compare_at_price > variant.price %}
+    <span class="product__original-price">
+      {{ variant.compare_at_price | money }}
+    </span>
+  {% endif %}
+
+  <span class="product__sale-price">
+    {{ variant.price | money }}
+  </span>
+</div>

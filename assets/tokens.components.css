@@ -1,0 +1,24 @@
+:root {
+    /* Product */
+    --product-page-width: 1180px;
+    --product-content-min-width: 320px;
+
+    /* Product Form */
+    --product-availability-in-stock-color: var(--color-text-success);
+    --product-availability-out-of-stock-color: var(--color-text-error);
+
+    /* Product Gallery */
+    --product-gallery-main-img-size: 95%;
+    --product-gallery-main-img-radius: var(--radius-lg);
+
+    --product-gallery-thumbnail-size: 64px;
+    --product-gallery-thumbnail-size-mobile: 54px;
+    --product-gallery-thumbnail-radius: var(--radius-md);
+
+}
+
+@media (min-width: 767px) {
+    :root {
+        --product-gallery-main-img-size: 550px;
+    }
+}

@@ -1,77 +1,77 @@
 {
   "general": {
-    "404": "Not found",
-    "article": "Article",
+    "404": "Nicht gefunden",
+    "article": "Artikel",
     "block": "Block",
     "blog": "Blog",
-    "cart": "Cart",
-    "collection": "Collection",
-    "collections": "Collections",
-    "collection_card": "Collection card",
-    "collections_grid": "Collections grid",
-    "colors": "Colors",
-    "column": "Column",
-    "content": "Content",
-    "custom_section": "Custom section",
-    "fonts": "Fonts",
+    "cart": "Warenkorb",
+    "collection": "Kollektion",
+    "collections": "Kollektionen",
+    "collection_card": "Kollektion-Karte",
+    "collections_grid": "Kollektionen-Raster",
+    "colors": "Farben",
+    "column": "Spalte",
+    "content": "Inhalt",
+    "custom_section": "Benutzerdefinierter Abschnitt",
+    "fonts": "Schriftarten",
     "footer": "Footer",
-    "group": "Group",
+    "group": "Gruppe",
     "header": "Header",
     "layout": "Layout",
-    "main": "Main",
-    "page": "Page",
-    "password": "Password",
-    "primary": "Primary",
-    "product": "Product",
-    "row": "Row",
-    "search": "Search",
-    "secondary": "Secondary",
-    "section": "Section",
-    "settings": "Settings",
-    "sidebar": "Sidebar",
+    "main": "Hauptbereich",
+    "page": "Seite",
+    "password": "Passwort",
+    "primary": "Primär",
+    "product": "Produkt",
+    "row": "Zeile",
+    "search": "Suche",
+    "secondary": "Sekundär",
+    "section": "Abschnitt",
+    "settings": "Einstellungen",
+    "sidebar": "Seitenleiste",
     "text": "Text",
     "theme": "Theme",
-    "typography": "Typography"
+    "typography": "Typografie"
   },
   "labels": {
-    "alignment": "Alignment",
-    "background": "Background",
-    "foreground": "Foreground",
-    "grid_gap": "Grid spacing",
-    "grid_item_width": "Grid item width",
-    "input_corner_radius": "Input corner radius",
-    "layout_direction": "Layout direction",
-    "menu": "Menu",
-    "customer_account_menu": "Customer account menu",
-    "padding": "Padding",
-    "page_margin": "Page margin",
-    "page_width": "Page width",
-    "show_payment_icons": "Show payment icons",
-    "text_style": "Text style",
+    "alignment": "Ausrichtung",
+    "background": "Hintergrund",
+    "foreground": "Vordergrund",
+    "grid_gap": "Rasterabstand",
+    "grid_item_width": "Rasterbreite",
+    "input_corner_radius": "Eckenradius der Eingabe",
+    "layout_direction": "Layoutrichtung",
+    "menu": "Menü",
+    "customer_account_menu": "Kundenkontomenü",
+    "padding": "Innenabstand",
+    "page_margin": "Seitenabstand",
+    "page_width": "Seitenbreite",
+    "show_payment_icons": "Zahlungssymbole anzeigen",
+    "text_style": "Textstil",
     "text": "Text"
   },
   "options": {
     "alignment": {
-      "left": "Left",
-      "center": "Center",
-      "right": "Right"
+      "left": "Links",
+      "center": "Zentriert",
+      "right": "Rechts"
     },
     "direction": {
       "horizontal": "Horizontal",
-      "vertical": "Vertical"
+      "vertical": "Vertikal"
     },
     "page_width": {
-      "narrow": "Narrow",
-      "wide": "Wide"
+      "narrow": "Schmal",
+      "wide": "Breit"
     },
     "size": {
-      "large": "Large",
-      "small": "Small"
+      "large": "Groß",
+      "small": "Klein"
     },
     "text_style": {
-      "title": "Title",
-      "subtitle": "Subtitle",
-      "normal": "Normal text"
-    },
+      "title": "Titel",
+      "subtitle": "Untertitel",
+      "normal": "Normaler Text"
+    }
   }
 }

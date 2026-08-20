@@ -1,0 +1,78 @@
+{% doc %}
+Renders the product gallery with thumbnails, main image slider and navigation.
+
+@param {product} product - The product to render images for.
+
+@example
+{% render 'product-gallery', product: product %}
+{% enddoc %}
+
+<div class="product-gallery" data-product-gallery>
+    <div class="product-gallery__thumbnails swiper" data-gallery-thumbs>
+        <div class="swiper-wrapper">
+            {% for image in product.images %}
+                <button
+                        type="button"
+                        class="product-gallery__thumbnail swiper-slide"
+                        aria-label="{{ 'product.gallery_image' | t: index: forloop.index }}"
+                >
+                    {% render 'image',
+                            class: 'product-gallery__thumbnail-image',
+                            image: image,
+                            width: 180
+                    %}
+                </button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="product-gallery__main">
+        <div class="product-gallery__slider swiper" data-gallery-main>
+            <div class="swiper-wrapper">
+                {% for image in product.images %}
+                    <div class="product-gallery__slide swiper-slide">
+                        {% render 'image',
+                                class: 'product-gallery__main-image',
+                                image: image,
+                                width: 1200
+                        %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% if product.images.size > 1 %}
+            <div class="product-gallery__navigation">
+                <button
+                        type="button"
+                        class="product-gallery__navigation-button product-gallery__navigation-button--prev"
+                        data-gallery-prev
+                        aria-label="{{ 'product.gallery_prev' | t }}"
+                >
+                    <img
+                            src="{{ 'icon.chevron-left.svg' | asset_url }}"
+                            alt=""
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                    >
+                </button>
+
+                <button
+                        type="button"
+                        class="product-gallery__navigation-button product-gallery__navigation-button--next"
+                        data-gallery-next
+                        aria-label="{{ 'product.gallery_next' | t }}"
+                >
+                    <img
+                            src="{{ 'icon.chevron-right.svg' | asset_url }}"
+                            alt=""
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                    >
+                </button>
+            </div>
+        {% endif %}
+    </div>
+</div>

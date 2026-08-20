@@ -1,0 +1,24 @@
+{
+  "name": "shopify-test-project",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\" style=\"position: relative;\">\r   <br>\r     <img src=\"./assets/shoppy-x-ray.svg\" alt=\"logo\" width=\"200\">\r   <br>\r   Shopify Skeleton Theme\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "shopify theme dev --store=testshop-3492345983057.myshopify.com",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:theme": "theme-check",
+    "lint:eslint": "eslint .",
+    "lint": "npm run lint:theme && npm run lint:eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.1",
+    "eslint-plugin-jsonc": "^3.4.1"
+  },
+  "dependencies": {
+    "swiper": "^14.1.0"
+  }
+}

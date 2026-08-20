@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
-    {% # Inlined CSS Variables %}
-    {% render 'css-variables' %}
+      {{ 'tokens.base.css' | asset_url | stylesheet_tag }}
+      {{ 'tokens.semantic.css' | asset_url | stylesheet_tag }}
+      {{ 'tokens.components.css' | asset_url | stylesheet_tag }}
+
+      {% render 'css-variables' %}
 
     {% comment %}
       Font preloading:

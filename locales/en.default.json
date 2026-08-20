@@ -1,52 +1,72 @@
 {
   "404": {
     "title": "404",
-    "not_found": "Page not found.",
-    "back_to_shopping": "Back to shopping"
+    "not_found": "Seite nicht gefunden.",
+    "back_to_shopping": "Weiter einkaufen"
   },
   "blog": {
-    "article_comments": "Comments",
-    "article_metadata_html": "{{ date }} by {{ author }}",
-    "comment_form_body": "Comment",
+    "article_comments": "Kommentare",
+    "article_metadata_html": "{{ date }} von {{ author }}",
+    "comment_form_body": "Kommentar",
     "comment_form_email": "Email",
     "comment_form_name": "Name",
-    "comment_form_submit": "Post",
-    "comment_form_title": "Add a comment"
+    "comment_form_submit": "Veröffentlichen",
+    "comment_form_title": "Kommentar hinzufügen"
   },
   "cart": {
-    "checkout": "Checkout",
-    "title": "Cart",
-    "update": "Update",
-    "remove": "Remove"
+    "checkout": "Zur Kasse",
+    "title": "Warenkorb",
+    "update": "Aktualisieren",
+    "remove": "Entfernen"
   },
   "customers": {
     "login": {
       "email": "Email",
       "password": "Password",
-      "submit": "Sign in",
-      "title": "Login"
+      "submit": "Anmelden",
+      "title": "Anmeldung"
     }
   },
   "collections": {
-    "title": "Collections"
+    "title": "Kollektionen"
   },
   "gift_card": {
-    "add_to_apple_wallet": "Add to Apple Wallet",
-    "card": "Gift card",
-    "expired": "This gift card has expired",
-    "expires_on": "Expires on {{ expires_on }}",
-    "use_at_checkout": "Use this gift card at checkout"
+    "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
+    "card": "Geschenkgutschein",
+    "expired": "Dieser Geschenkgutschein ist abgelaufen",
+    "expires_on": "Läuft am {{ expires_on }} ab",
+    "use_at_checkout": "Diesen Geschenkgutschein an der Kasse verwenden"
   },
   "password": {
-    "title": "This shop is private",
-    "password": "Password",
-    "enter": "Enter"
+    "title": "Dieser Shop ist privat",
+    "password": "Passwort",
+    "enter": "Eingeben"
+  },
+  "product": {
+    "variants": "Variante",
+    "quantity": "Menge",
+    "add_to_cart": "In den Warenkorb",
+    "sold_out": "Ausverkauft",
+    "in_stock": "Auf Lager!",
+    "not_available": "Nicht lieferbar",
+    "delivery_default": "Versand in ca. 2–4 Werktagen",
+    "gallery_image": "Produktbild {{ index }}",
+    "gallery_prev": "Vorheriges Produktbild",
+    "gallery_next": "Nächstes Produktbild",
+    "benefits": {
+      "quality": "Geprüfte Qualität",
+      "shipping": "Schneller Versand",
+      "returns": "Einfache Rückgabe",
+      "payment": "Sichere Zahlung",
+      "support": "Persönlicher Support",
+      "availability": "Sofort verfügbar"
+    }
   },
   "search": {
-    "title": "Search",
-    "placeholder": "Search articles, pages, or products",
-    "submit": "Search",
-    "no_results_html": "No results found for {{ terms }}",
-    "results_for_html": "{{ count }} results found for {{ terms }}"
+    "title": "Suche",
+    "placeholder": "Artikel, Seiten oder Produkte durchsuchen",
+    "submit": "Suchen",
+    "no_results_html": "Keine Ergebnisse für {{ terms }} gefunden",
+    "results_for_html": "{{ count }} Ergebnisse für {{ terms }} gefunden"
   }
 }
