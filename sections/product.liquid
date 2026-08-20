@@ -16,6 +16,8 @@
 
         <div class="product__content">
             {% render 'product-info', product: product %}
+
+            {% render 'product-form', product: product %}
         </div>
     </div>
 
@@ -24,6 +26,7 @@
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 {{ 'component.product.css' | asset_url | stylesheet_tag }}
 {{ 'component.product-gallery.css' | asset_url | stylesheet_tag }}
+{{ 'component.product-benefits.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
 <script src="{{ 'script.product-gallery.js' | asset_url }}" defer></script>

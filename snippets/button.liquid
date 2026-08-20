@@ -1,0 +1,18 @@
+{% doc %}
+  Renders a reusable button.
+
+  @param {string} label - The button label.
+  @param {string} [type] - The button type. Defaults to button.
+  @param {boolean} [disabled] - Whether the button is disabled.
+  @param {string} [css_class] - Additional CSS classes.
+{% enddoc %}
+
+<button
+  class="{{ css_class }}"
+  type="{{ type | default: 'button' }}"
+  {% if disabled %}
+    disabled
+  {% endif %}
+>
+  {{ label }}
+</button>
